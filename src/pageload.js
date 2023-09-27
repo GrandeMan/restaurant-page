@@ -1,21 +1,23 @@
 export function pageLoad () {
         let content = document.createElement('div');
+        content.id = 'home-content';
 
         //Header
         let header = document.createElement('header');
-        let h1 = document.createElement('h1');
-        h1.textContent = "Welcome to Dry River Restaurant";
-        header.appendChild(h1);
-        content.appendChild(header);
-
-        //Image
+        header.classList.add('header')
         let img = document.createElement('img');
         img.src = "https://www.designatak.com/getattachment/ba919fdb-d1ea-4133-9f3f-040b0da6b8eb/teaser.aspx";
         img.alt = "Dry River Restaurant Interior";
-        content.appendChild(img);
+        let h1 = document.createElement('h1');
+        h1.textContent = "Welcome to Dry River Restaurant";
+        header.appendChild(img);
+        header.appendChild(h1);
+        content.appendChild(header);
+        
 
         //About Us
         let aboutSection = document.createElement('section');
+        aboutSection.classList.add('about')
         let aboutHeader = document.createElement('h2');
         aboutHeader.textContent = "About Us";
         aboutSection.appendChild(aboutHeader);
