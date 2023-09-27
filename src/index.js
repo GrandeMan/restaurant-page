@@ -1,1 +1,3 @@
-console.log(`We're online!`);
+import { pageLoad } from "./pageload.js";
+
+pageLoad();
