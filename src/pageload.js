@@ -22,6 +22,7 @@ export function pageLoad () {
         aboutHeader.textContent = "About Us";
         aboutSection.appendChild(aboutHeader);
         let aboutPara = document.createElement('p');
+        aboutPara.classList.add('about-para')
         aboutPara.textContent = "Experience the finest dining at Dry River Restaurant. Our culinary experts craft exquisite dishes that will tantalize your taste buds. Whether you're looking for a romantic dinner, a family gathering, or a special occasion, we have the perfect ambiance and cuisine to make your dining experience unforgettable.";
         aboutSection.appendChild(aboutPara);
         content.appendChild(aboutSection);
