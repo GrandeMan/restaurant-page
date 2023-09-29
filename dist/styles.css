@@ -2,6 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Sanchez&family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Russo+One&family=Share+Tech&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.75); 
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.75); 
+}
+
+/* scrollbar-color: #888 transparent; 
+scrollbar-width: thin; */
+
 * {
     box-sizing: border-box;
 }
@@ -12,7 +28,7 @@ body {
     text-align: center;   
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Roboto Slab';
 }
 
@@ -25,16 +41,14 @@ h1, h2 {
     font-weight: 800;
     gap: 2rem;
     padding: 1.5rem;
-    margin: 0 1rem;
     z-index: 1;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     width: 100%;
-    right: .01rem;
 }
 
 .tab {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: .5em .75em;
 }
 
 .tab.active {
@@ -63,7 +77,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #fde047;
     text-shadow: 0 0 1rem black;
 }
@@ -89,6 +103,7 @@ h1 {
 }
 .about-para {
     padding:  2rem;
+    margin: 2rem;
     background-color: rgba(254, 252, 232, 0.75) ;
     color: #422006 ;
     font-size: 1.5rem;
@@ -137,30 +152,28 @@ footer p {
     font-size: 1.5rem;
 }
 
-/* .img-overlay {
+.img-overlay {
     width: 100%;
-    height: 20vh;
+    height: 110%;
     position: absolute;
-    top: 15rem;
+    top: 17.5em;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(253, 224, 71));
     pointer-events: none;
-    z-index: 1;
-    transform: translateZ(-5px) scale(1.5)
-} */
+}
 
 .menu-img {
     position: absolute;
-    height: 130%;
-    width: 130%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translateZ(-5px) scale(1.5);
+    transform: translateZ(-5px) scale(2);
 }
 
 .menu-list {
     background-color: #fefce8;
     padding: 2rem;
-    margin: 1rem;
+    margin: 3rem;
     border-radius: 3rem;
 }
 
