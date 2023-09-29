@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Sanchez&family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Russo+One&family=Share+Tech&display=swap');
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -13,7 +13,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(85, 85, 85, 0.75); 
-}
+} */
 
 /* scrollbar-color: #888 transparent; 
 scrollbar-width: thin; */
@@ -156,7 +156,7 @@ footer p {
     width: 100%;
     height: 110%;
     position: absolute;
-    top: 17.5em;
+    top: 20em;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(253, 224, 71));
     pointer-events: none;
 }
@@ -179,4 +179,29 @@ footer p {
 
 li{
     list-style: none;
+}
+
+#contact-content {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color:#fde047;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
 }
